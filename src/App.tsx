@@ -1,0 +1,32 @@
+import Aboutme from "./componenets/Aboutme"
+import Contact from "./componenets/Contact"
+import Header from "./componenets/Header"
+import Home from "./componenets/Home"
+import Projects from "./componenets/Projects"
+import WhatIdo from "./componenets/WhatIdo"
+import { motion, useScroll } from "framer-motion";
+import Footer from "./componenets/Footer"
+import { DarkThemeToggle, Flowbite } from "flowbite-react"
+import { useEffect } from "react"
+import { UserContextProvider } from "./componenets/UserContext"
+
+function App() {
+  return (
+    <Flowbite>
+      <UserContextProvider >
+        <div className="bg-gray-800 h-full  dark:bg-[#1A1A1A] ">
+
+          <Header />
+          <Home />
+          <Aboutme />
+          <WhatIdo />
+          <Projects />
+          <Contact />
+          <Footer />
+        </div>
+      </UserContextProvider>
+    </Flowbite>
+  )
+}
+
+export default App

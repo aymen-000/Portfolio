@@ -1,0 +1,100 @@
+.gradient-text {
+    background: linear-gradient(90.54deg, #4FC3F7 0.46%, #B0E4FB 50.3%, #FFFFFF 91.25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.text {
+
+    height: fit-content;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px;
+    /* or 158% */
+    text-align: center;
+
+    color: #E1E1E1;
+}
+
+.button {
+    /* Frame 70 */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+
+    width: 216px;
+    height: 55px;
+
+    border: 1px solid #4FC3F7;
+    border-radius: 55px;
+
+}
+
+.card-container {
+    display: flex;
+}
+
+.card-container .bg-gray-800 {
+    flex: 1;
+    margin: 0 5px;
+}
+
+.gmail_button {
+    /* Rectangle 17 */
+
+    box-sizing: border-box;
+
+
+    border: 1.55598px solid #484E53;
+    border-radius: 15px;
+
+
+
+}
+
+.taxt {
+    /* Group 482959 */
+
+    width: 693px;
+    height: 134px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+
+    /* Let’s Work Together - */
+
+    position: absolute;
+    width: 693px;
+    height: 134px;
+    left: 0px;
+    top: 0px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 63px;
+    line-height: 106%;
+    /* or 67px */
+    letter-spacing: 0.07em;
+    text-transform: capitalize;
+
+    color: #DEDEDE;
+
+
+}
