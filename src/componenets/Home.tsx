@@ -4,7 +4,7 @@ import './styles.css';
 
 function Home() {
     return (
-        <div className='flex justify-center items-start h-fit'>
+        <div className='flex justify-center items-start h-fit '>
             <div
                 id='home'
                 className='flex justify-center dark:bg-custom-gradient bg-cover bg-center w-[800px] h-fit rounded-[500px] my-1 mx-10 text-white'
@@ -12,7 +12,7 @@ function Home() {
                 <div className="flex flex-col mt-10 items-center space-y-2 h-fit text-center">
                     <div className="text-center">
                         <img
-                            src="\src\assets\imgs\me.jpg"
+                            src="\src\assets\me.jpg"
                             className="rounded-full h-[200px] w-[202px]"
                             alt="Profile"
                         />

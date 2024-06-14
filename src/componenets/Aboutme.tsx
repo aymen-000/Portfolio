@@ -12,7 +12,7 @@ function Aboutme() {
     return (
         <div className="container mx-auto px-4 py-8 rounded-full" id='about'>
             <div className="text-center my-4">
-                <h1 className="font-inter text-3xl font-bold text-white">About Me</h1>
+                <h1 className="font-inter text-5xl font-bold text-white">About Me</h1>
                 <h2 className="font-poppins font-semibold text-[15px] gradient-text">Get to know me</h2>
             </div>
 

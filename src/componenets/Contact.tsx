@@ -58,8 +58,8 @@ export function Contact() {
                         <TextInput value={name} onChange={(e) => { setName(e.target.value) }} className="border-[#D6DDED] bg-[#8987A1] rounded-lg" type="text" placeholder="name" required shadow />
                     </div>
                     <div className="w-full">
-                        <div className="mb-2 block w-full">
-                            <Label htmlFor="Service" className="text-white" value="Select your service" />
+                        <div className="mb-2 block w-full ">
+                            <Label htmlFor="Service" className="text-white " value="Select your service" />
                         </div>
                         <Select onChange={(e) => { setService(e.target.value) }} className="w-full" required>
                             {data.fields.map((item) => {
@@ -71,7 +71,7 @@ export function Contact() {
                         <div className="mb-2 block">
                             <Label htmlFor="comment" className="text-white" value="Your message" />
                         </div>
-                        <Textarea value={message} onChange={(e) => { setMessage(e.target.value) }} placeholder="Leave a you message..." required rows={4} />
+                        <Textarea className="p-4" value={message} onChange={(e) => { setMessage(e.target.value) }} placeholder="Leave a you message..." required rows={4} />
                     </div>
                     <div className="w-full">
                         <Button type="submit" className="w-full my-2 ">

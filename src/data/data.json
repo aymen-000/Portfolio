@@ -46,49 +46,49 @@
       "field": "Image Classification",
       "description": "Developed a model to detect plant diseases from images with high accuracy.",
       "title": "Plant Disease Detection",
-      "image": "src/assets/imgs/plant.jpg",
+      "image": "src/assets/plant.jpg",
       "url": "https://github.com/aymen-000/Plant-Diseases-Prediction"
     },
     {
       "field": "Websites",
       "description": "Built a chat application supporting real-time messaging and media sharing.",
       "title": "Chat App",
-      "image": "src/assets/imgs/chat.jpg",
+      "image": "src/assets/chat.jpg",
       "url": "https://github.com/aymen-000/Plant-Diseases-Prediction"
     },
     {
       "field": "Machine Learning",
       "description": "Created a system to classify YouTube comments using machine learning models.",
       "title": "YouTube Comments Classification",
-      "image": "/src/assets/imgs/youtube.jpg",
+      "image": "/src/assets/youtube.jpg",
       "url": "https://github.com/aymen-000/Youtube_comments_classification"
     },
     {
       "field": "Websites",
       "description": "Developed a booking website with features for managing reservations online.",
       "title": "Booking Website",
-      "image": "src/assets/imgs/booking.jpg",
+      "image": "src/assets/booking.jpg",
       "url": "https://github.com/aymen-000/booking_web"
     },
     {
       "field": "Websites",
       "description": "Created an online bookstore with a catalog of books and user reviews.",
       "title": "Book Store",
-      "image": "src/assets/imgs/book.jpg",
+      "image": "src/assets/book.jpg",
       "url": "https://github.com/aymen-000/booking_web"
     },
     {
       "field": "Machine Learning",
       "description": "Developed a recommendation system to suggest laptop prices based on specs.",
       "title": "Laptop Price Recommendation",
-      "image": "src/assets/imgs/pc.jpg",
+      "image": "src/assets/pc.jpg",
       "url": "https://github.com/aymen-000/laptop_price"
     },
     {
       "field": "Image Classification",
       "description": "Built a model to classify different types of flowers from image data.",
       "title": "Flower Classification",
-      "image": "src/assets/imgs/flower.jpg",
+      "image": "src/assets/flower.jpg",
       "url": "https://github.com/aymen-000/Flower-classification-"
     }
   ]
