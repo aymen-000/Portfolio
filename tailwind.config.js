@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const flowbite = require("flowbite-react/tailwind");
+import rec from './src/assets/Rectangle.png'
 export default {
   darkMode: 'class', 
   content: [
