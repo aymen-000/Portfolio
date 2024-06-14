@@ -1,6 +1,7 @@
 
 import { TypeAnimation } from 'react-type-animation';
 import './styles.css';
+import me from '../assets/me.jpg'
 
 function Home() {
     return (
@@ -12,12 +13,12 @@ function Home() {
                 <div className="flex flex-col mt-10 items-center space-y-2 h-fit text-center">
                     <div className="text-center">
                         <img
-                            src="\src\assets\me.jpg"
+                            src={me}
                             className="rounded-full h-[200px] w-[202px]"
                             alt="Profile"
                         />
                     </div>
-                    <div className="font-poppins font-bold text-2xl">
+                    <div className="font-poppins font-bold text-3xl">
                         BOUKHARI AIMEN
                     </div>
                     <TypeAnimation
@@ -34,12 +35,12 @@ function Home() {
                     />
                     <div>
                         <a href="/#contact">
-                            <button className="bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white py-1 px-3 border border-blue-500 hover:border-transparent rounded-[55px]">
+                            <button className=" text-xl  bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded-[55px]">
                                 Contact me
                             </button>
                         </a>
                     </div>
-                    <div className='text my-2 p-4'>
+                    <div className='text my-2 p-4 text-1xl'>
                         As a passionate data scientist with expertise in machine learning, AI, and data analytics, I thrive on the challenges of exploring complex data landscapes and uncovering meaningful patterns that drive innovation. I am also a full stack developer using Node.js for backend and React, Tailwind CSS, Flowbit, and Material-UI for frontend.
                     </div>
                 </div>

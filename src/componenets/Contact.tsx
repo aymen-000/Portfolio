@@ -1,9 +1,10 @@
 import { Button, Label, TextInput, Select, Textarea, Alert, Spinner } from "flowbite-react";
-import data from '../data/data.json'
+import data from '../data/data'
 import { HiInformationCircle } from "react-icons/hi";
 import { useState } from "react";
 import emailjs from '@emailjs/browser';
 import { FormEvent } from 'react';
+
 
 export function Contact() {
     const serviceId = import.meta.env.VITE_SERVICE_ID
@@ -47,19 +48,19 @@ export function Contact() {
                 <form className="w-[50%] max-sm:w-[80%]" onSubmit={sentEmail}>
                     <div className="w-full mb-2">
                         <div className="mb-2 block">
-                            <Label htmlFor="email2" value="Your email" className="text-white" />
+                            <Label htmlFor="email2" value="Your email" className="text-white text-xl" />
                         </div>
                         <TextInput value={email} onChange={(e) => { setEmail(e.target.value) }} className="border-[#D6DDED] bg-[#8987A1] rounded-lg " type="email" placeholder="name@domain.com" required shadow />
                     </div>
                     <div className="w-full mb-2">
                         <div className="mb-2 block">
-                            <Label htmlFor="name" value="Your name" className="text-white" />
+                            <Label htmlFor="name" value="Your name" className="text-white text-xl" />
                         </div>
                         <TextInput value={name} onChange={(e) => { setName(e.target.value) }} className="border-[#D6DDED] bg-[#8987A1] rounded-lg" type="text" placeholder="name" required shadow />
                     </div>
                     <div className="w-full">
                         <div className="mb-2 block w-full ">
-                            <Label htmlFor="Service" className="text-white " value="Select your service" />
+                            <Label htmlFor="Service" className="text-white text-xl " value="Select your service" />
                         </div>
                         <Select onChange={(e) => { setService(e.target.value) }} className="w-full" required>
                             {data.fields.map((item) => {
@@ -67,9 +68,9 @@ export function Contact() {
                             })}
                         </Select>
                     </div>
-                    <div className="w-full">
+                    <div className="w-full mt-2">
                         <div className="mb-2 block">
-                            <Label htmlFor="comment" className="text-white" value="Your message" />
+                            <Label htmlFor="comment" className="text-white text-xl " value="Your message" />
                         </div>
                         <Textarea className="p-4" value={message} onChange={(e) => { setMessage(e.target.value) }} placeholder="Leave a you message..." required rows={4} />
                     </div>

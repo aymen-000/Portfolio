@@ -1,16 +1,17 @@
 
 import './styles.css'
 import { Button } from 'flowbite-react'
+import gmail from '/src/assets/gmail.png'
 function Footer() {
     return (
         <div>
-            <div className='flex max-sm:flex-col justify-between mx-6 my-1 max-sm:items-center max-lg:space-y-3 '>
+            <div className='flex max-sm:flex-col justify-between mx-6  max-sm:items-center max-lg:space-y-3 my-6 '>
                 <div>
                     <div className='text flex-col text-justify text-3xl -tracking-tighter'><div>Let's</div> <div>Work Together</div> </div>
                 </div>
                 <div>
                     <a href="mailto:aymne011@gmail.com">
-                        <Button className='text-white hover:bg-slate-700 px-3 py-1 rounded-xl bg-transparent bo border-[rgb(79,195,247)] items-center'><div><img src='\src\assets\imgs\gmail.png' width="20px" height="20px" className='items-center mx-2 ' /></div> aymne011@gmail.com</Button>
+                        <Button className='text-white  hover:bg-slate-700 px-3 py-2 rounded-xl bg-transparent bo border-[rgb(79,195,247)] items-center '><div className='flex space-x-2 text-2xl items-center'><img src={gmail}width="30px" height="20px" className='items-center mx-2 ' /> aymne011@gmail.com</div> </Button>
                     </a>
 
                 </div>

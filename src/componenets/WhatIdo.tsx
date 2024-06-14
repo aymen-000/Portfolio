@@ -1,7 +1,7 @@
 import  { useState, useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
 import Cards from './Cards';
-import servicesData from '../data/data.json';
+import servicesData from '../data/data';
 function WhatIdo() {
     const [showCards, setShowCards] = useState<boolean>(false);
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import data from '../data/data.json';
+import data from '../data/data';
 import ProjectsCards from './ProjetcsCards';
 
 interface FieldProps {
