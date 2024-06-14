@@ -1,37 +1,37 @@
 {
   "services": [
     {
-      "icon": "..\\src\\assets\\ml.png",
+      "icon": "\\src\\assets\\ml.png",
       "title": "Full Stack Web Development",
       "text": "I am a versatile full stack web developer with expertise in building dynamic web applications using the MERN stack. I specialize in front-end technologies such as React, Tailwind CSS, and Material-UI."
     },
     {
-      "icon": "..\\src\\assets\\ml.png",
+      "icon": "\\src\\assets\\ml.png",
       "title": "Recommendation Systems",
       "text": "Recommendation systems predict user preferences based on past interactions. I design and implement personalized recommendation systems to enhance user experience."
     },
     {
-      "icon": "..\\src\\assets\\ml.png",
+      "icon": "\\src\\assets\\ml.png",
       "title": "Image Classification",
       "text": "Image classification categorizes images into predefined labels. I develop machine learning models for image classification tasks, focusing on computer vision applications."
     },
     {
-      "icon": "..\\src\\assets\\ml.png",
+      "icon": "\\src\\assets\\ml.png",
       "title": "Chat Applications",
       "text": "Chat applications enable real-time communication between users. I build chat applications with features like messaging, file sharing, and multimedia support."
     },
     {
-      "icon": "..\\src\\assets\\ml.png",
+      "icon": "\\src\\assets\\ml.png",
       "title": "Prediction Systems",
       "text": "Prediction systems forecast future trends using historical data and machine learning. I specialize in developing prediction systems for various domains."
     },
     {
-      "icon": "..\\src\\assets\\ml.png",
+      "icon": "\\src\\assets\\ml.png",
       "title": "E-commerce Websites",
       "text": "E-commerce websites facilitate online buying and selling. I develop custom e-commerce websites tailored to specific business needs."
     },
     {
-      "icon": "..\\src\\assets\\ml.png",
+      "icon": "\\src\\assets\\ml.png",
       "title": "Delivery Services",
       "text": "Delivery services transport goods between locations. I develop delivery management systems to optimize routes and track shipments in real-time."
     }
