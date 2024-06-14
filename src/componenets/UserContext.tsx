@@ -6,12 +6,12 @@ interface UserContextType {
 }
 
 export const UserContext = createContext<UserContextType>({
-  theme: 'dark',
+  theme: localStorage.getItem('flowbite-theme-mode') || 'dark' ,
   setTheme: () => {}
 });
 
 export function UserContextProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState(localStorage.getItem('flowbite-theme-mode') ||'dark');
 
   return (
     <UserContext.Provider value={{ theme, setTheme }}>

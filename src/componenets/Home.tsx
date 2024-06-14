@@ -2,13 +2,18 @@
 import { TypeAnimation } from 'react-type-animation';
 import './styles.css';
 import me from '../assets/me.jpg'
+import rec from '../assets/Rectangle.png'
+import { useContext } from 'react';
+import { UserContext } from './UserContext';
 
 function Home() {
+    const {theme} = useContext(UserContext)
     return (
         <div className='flex justify-center items-start h-fit '>
             <div
                 id='home'
-                className='flex justify-center dark:bg-custom-gradient bg-cover bg-center w-[800px] h-fit rounded-[500px] my-1 mx-10 text-white'
+                className='flex justify-center  bg-cover bg-center w-[800px] h-fit rounded-[500px] my-1 mx-10 text-white'
+                style= { theme == 'dark' ? { backgroundImage: `url(${rec})` } : {} } 
             >
                 <div className="flex flex-col mt-10 items-center space-y-2 h-fit text-center">
                     <div className="text-center">
