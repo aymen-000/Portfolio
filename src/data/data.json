@@ -1,97 +1,95 @@
 {
   "services": [
     {
-      "icon": "\\src\\assets\\ml.png",
+      "icon": "/src/assets/ml.png",
       "title": "Full Stack Web Development",
-      "text": "I am a versatile full stack web developer with expertise in building dynamic web applications using the MERN stack. I specialize in front-end technologies such as React, Tailwind CSS, and Material-UI."
+      "text": "Expert in full stack web development with MERN stack, React, and Tailwind CSS."
     },
     {
-      "icon": "\\src\\assets\\ml.png",
+      "icon": "/src/assets/ml.png",
       "title": "Recommendation Systems",
-      "text": "Recommendation systems predict user preferences based on past interactions. I design and implement personalized recommendation systems to enhance user experience."
+      "text": "Design and implement personalized recommendation systems to enhance user experience."
     },
     {
-      "icon": "\\src\\assets\\ml.png",
+      "icon": "/src/assets/ml.png",
       "title": "Image Classification",
-      "text": "Image classification categorizes images into predefined labels. I develop machine learning models for image classification tasks, focusing on computer vision applications."
+      "text": "Develop machine learning models for image classification in computer vision tasks."
     },
     {
-      "icon": "\\src\\assets\\ml.png",
+      "icon": "/src/assets/ml.png",
       "title": "Chat Applications",
-      "text": "Chat applications enable real-time communication between users. I build chat applications with features like messaging, file sharing, and multimedia support."
+      "text": "Build chat applications with real-time messaging, file sharing, and multimedia support."
     },
     {
-      "icon": "\\src\\assets\\ml.png",
+      "icon": "/src/assets/ml.png",
       "title": "Prediction Systems",
-      "text": "Prediction systems forecast future trends using historical data and machine learning. I specialize in developing prediction systems for various domains."
+      "text": "Develop prediction systems to forecast trends using historical data and machine learning."
     },
     {
-      "icon": "\\src\\assets\\ml.png",
+      "icon": "/src/assets/ml.png",
       "title": "E-commerce Websites",
-      "text": "E-commerce websites facilitate online buying and selling. I develop custom e-commerce websites tailored to specific business needs."
+      "text": "Create custom e-commerce websites tailored to specific business needs and requirements."
     },
     {
-      "icon": "\\src\\assets\\ml.png",
+      "icon": "/src/assets/ml.png",
       "title": "Delivery Services",
-      "text": "Delivery services transport goods between locations. I develop delivery management systems to optimize routes and track shipments in real-time."
+      "text": "Develop delivery management systems to optimize routes and track shipments in real-time."
     }
-  ] ,
-  "fields" : [
-    "machine Learning" , 
-    "Websites", 
-    "Image classification" 
-  ], 
-  "projects" : [
+  ],
+  "fields": [
+    "Machine Learning",
+    "Websites",
+    "Image Classification"
+  ],
+  "projects": [
     {
-      "field" : "Image classification" , 
-      "description" : "Lorem ipsum dolor sit amet consectetur adipisicing" ,
-      "title"  : "Plant Diseas Detection" , 
-      "image" : "src\\assets\\imgs\\plant.jpg",
-      "url" : "https://github.com/aymen-000/Plant-Diseases-Prediction"
- 
+      "field": "Image Classification",
+      "description": "Developed a model to detect plant diseases from images with high accuracy.",
+      "title": "Plant Disease Detection",
+      "image": "src/assets/imgs/plant.jpg",
+      "url": "https://github.com/aymen-000/Plant-Diseases-Prediction"
     },
     {
-      "field" : "Websites" , 
-      "description" : "Lorem ipsum dolor sit amet consectetur adipisicing" ,
-      "title"  : "Chat app" , 
-      "image" : "src\\assets\\imgs\\chat.jpg",
-      "url" : "https://github.com/aymen-000/Plant-Diseases-Prediction"
+      "field": "Websites",
+      "description": "Built a chat application supporting real-time messaging and media sharing.",
+      "title": "Chat App",
+      "image": "src/assets/imgs/chat.jpg",
+      "url": "https://github.com/aymen-000/Plant-Diseases-Prediction"
     },
     {
-      "field" : "machine Learning" , 
-      "description" : "Lorem ipsum dolor sit amet consectetur adipisicing" ,
-      "title"  : "Youtube Comments classification" , 
-      "image" : "\\src\\assets\\imgs\\youtube.jpg",
-      "url" : "https://github.com/aymen-000/Youtube_comments_classification"
+      "field": "Machine Learning",
+      "description": "Created a system to classify YouTube comments using machine learning models.",
+      "title": "YouTube Comments Classification",
+      "image": "/src/assets/imgs/youtube.jpg",
+      "url": "https://github.com/aymen-000/Youtube_comments_classification"
     },
     {
-      "field" : "Websites" , 
-      "description" : "Lorem ipsum dolor sit amet consectetur adipisicing" ,
-      "title"  : "Booking Website" , 
-      "image" : "src\\assets\\imgs\\booking.jpg",
-      "url" : "https://github.com/aymen-000/booking_web"
-    } , 
-    {
-      "field" : "Websites" , 
-      "description" : "Lorem ipsum dolor sit amet consectetur adipisicing" ,
-      "title"  : "Book Store" , 
-      "image" : "src\\assets\\imgs\\book.jpg",
-      "url" : "https://github.com/aymen-000/booking_web"
+      "field": "Websites",
+      "description": "Developed a booking website with features for managing reservations online.",
+      "title": "Booking Website",
+      "image": "src/assets/imgs/booking.jpg",
+      "url": "https://github.com/aymen-000/booking_web"
     },
     {
-      "field" : "machine Learning" , 
-      "description" : "Lorem ipsum dolor sit amet consectetur adipisicing" ,
-      "title"  : "Laptop price recomondation" , 
-      "image" : "src\\assets\\imgs\\pc.jpg",
-      "url" : "https://github.com/aymen-000/laptop_price"
-    }, 
+      "field": "Websites",
+      "description": "Created an online bookstore with a catalog of books and user reviews.",
+      "title": "Book Store",
+      "image": "src/assets/imgs/book.jpg",
+      "url": "https://github.com/aymen-000/booking_web"
+    },
     {
-      "field" : "Image classification" , 
-      "description" : "Lorem ipsum dolor sit amet consectetur adipisicing" ,
-      "title"  : "Flower Classification" , 
-      "image" : "src\\assets\\imgs\\flower.jpg",
-      "url" : "https://github.com/aymen-000/Flower-classification-"
+      "field": "Machine Learning",
+      "description": "Developed a recommendation system to suggest laptop prices based on specs.",
+      "title": "Laptop Price Recommendation",
+      "image": "src/assets/imgs/pc.jpg",
+      "url": "https://github.com/aymen-000/laptop_price"
+    },
+    {
+      "field": "Image Classification",
+      "description": "Built a model to classify different types of flowers from image data.",
+      "title": "Flower Classification",
+      "image": "src/assets/imgs/flower.jpg",
+      "url": "https://github.com/aymen-000/Flower-classification-"
     }
   ]
 }
-
