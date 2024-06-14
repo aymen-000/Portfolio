@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import data from '../data/data.json';
 import ProjectsCards from './ProjetcsCards';
 
@@ -7,8 +7,6 @@ interface FieldProps {
 }
 
 const ShowProjetcs: React.FC<FieldProps> = ({ field }) => {
-  const [index , setIndex] = useState(0)
-  const [items , seItems] = useState([])
   return (
     <div className='flex justify-center container'>
       <div className='grid max-sm:grid-cols-1 max-lg:grid-cols-2 grid-cols-3 w-[80%] gap-1 '>

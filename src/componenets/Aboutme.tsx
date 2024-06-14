@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import { useContext } from 'react';
 import './styles.css';
 import light_file from '../uploads/blue_cv.pdf';
 import dark_file from '../uploads/dark_cv.pdf'

@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import "./styles.css"
-import { useParams } from 'react-router-dom';
 interface CardsProps {
     title: string;
     text: string;

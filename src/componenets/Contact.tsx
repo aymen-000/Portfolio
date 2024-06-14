@@ -1,9 +1,10 @@
 import { Button, Label, TextInput, Select, Textarea, Alert, Spinner } from "flowbite-react";
 import data from '../data/data.json'
-import axios from "axios";
 import { HiInformationCircle } from "react-icons/hi";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import emailjs from '@emailjs/browser';
+import { FormEvent } from 'react';
+
 export function Contact() {
     const serviceId = import.meta.env.VITE_SERVICE_ID
     const templateId = import.meta.env.VITE_TEMPLATE_ID
@@ -15,7 +16,8 @@ export function Contact() {
     const [success, setSuccess] = useState(false)
     const [failure, setFailure] = useState(false)
     const [loading, setLoading] = useState(false)
-    const sentEmail = (e) => {
+
+    const sentEmail = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         setLoading(true)
         const obj = {
@@ -24,16 +26,17 @@ export function Contact() {
             message: "service: " + service + "\n" + message,
             from_email: email
         }
-        emailjs.send(serviceId, templateId, obj, public_key).then((result) => {
+        emailjs.send(serviceId, templateId, obj, public_key).then(() => {
             setSuccess(true)
             setLoading(false)
             setFailure(false)
-        }).catch((err) => {
+        }).catch(() => {
             setLoading(false)
             setFailure(true)
             setSuccess(false)
         })
     }
+
     return (
         <div className="w-full" id="contact">
             <div className="text-center my-4">
@@ -41,7 +44,7 @@ export function Contact() {
                 <h2 className="font-poppins font-semibold text-[15px] gradient-text">Get In Touch</h2>
             </div>
             <div className="flex justify-center w-full items-center justify-items-center ">
-                <form className="w-[50%] max-sm:w-[80%]" onSubmit={(e) => sentEmail(e)}>
+                <form className="w-[50%] max-sm:w-[80%]" onSubmit={sentEmail}>
                     <div className="w-full mb-2">
                         <div className="mb-2 block">
                             <Label htmlFor="email2" value="Your email" className="text-white" />
@@ -60,7 +63,7 @@ export function Contact() {
                         </div>
                         <Select onChange={(e) => { setService(e.target.value) }} className="w-full" required>
                             {data.fields.map((item) => {
-                                return <option>{item}</option>
+                                return <option key={item}>{item}</option>
                             })}
                         </Select>
                     </div>
@@ -82,13 +85,13 @@ export function Contact() {
                         success && <div className="text-center my-2"> <Alert color="success">Email sent to Aimen Wail. He will reply to you shortly. </Alert></div>
                     }
                     {
-                        failure && <div className="text-center my-2" > <Alert icon={HiInformationCircle} color="failure">Oops something happed try again ... </Alert></div>
+                        failure && <div className="text-center my-2" > <Alert icon={HiInformationCircle} color="failure">Oops something happened, try again ... </Alert></div>
                     }
                 </form>
-
             </div>
         </div>
     );
 }
 
 export default Contact
+

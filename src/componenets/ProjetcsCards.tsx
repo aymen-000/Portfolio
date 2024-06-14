@@ -8,7 +8,7 @@ interface CardsProps {
   url: string;
 }
 
-const ProjectsCards: React.FC<CardsProps> = ({ field, description, title, image, url }) => {
+const ProjectsCards: React.FC<CardsProps> = ({ description, title, image, url }) => {
   return (
       <div className="bg-white border border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700 h-full  cursor-pointer shadow-lg transform transition duration-500 hover:scale-95 hover:shadow-2xl   ">
         <div className='h-[100px]'>

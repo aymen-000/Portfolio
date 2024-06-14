@@ -1,11 +1,9 @@
-import React from 'react'
 import "./styles.css"
 import data from '../data/data.json'
 import { Button } from 'flowbite-react'
-import { useState , useEffect } from 'react'
+import { useState} from 'react'
 import ShowProjetcs from './ShowProjects'
 function Projects() {
-    const [url , setUrl] =  useState("")
     const [selected , setSeleceted] = useState("machine Learning")
     return (
         <div id='projects'>
@@ -15,7 +13,7 @@ function Projects() {
             </div>
             <div className='text-center flex flex-wrap space-x-5 justify-center '>
                 {
-                    data.fields.map((item , index)=>{
+                    data.fields.map((item )=>{
                         return (
                             <div className='my-2'>
                                 

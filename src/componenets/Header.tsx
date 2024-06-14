@@ -1,9 +1,6 @@
-import React, { useContext, useEffect, useState } from 'react'
-import { Button, MegaMenu, Navbar } from 'flowbite-react';
-import { Link } from "react-router-dom";
-import { MdOutlineLightMode } from "react-icons/md";
+import  { useContext } from 'react'
+import {Navbar } from 'flowbite-react';
 import { DarkThemeToggle } from 'flowbite-react';
-import { motion, useScroll } from "framer-motion";
 import { UserContext } from './UserContext';
 function Header() {
     const {setTheme} = useContext(UserContext)
@@ -12,7 +9,7 @@ function Header() {
             <Navbar.Brand href='./' className='flex justify-evenly ml-6' >
                 <div className='font-canilari text-2xl font-bold   text-white items-cente r my-2'>Boukhari Aimen</div >
             </Navbar.Brand>
-            <div className='items-center md:hidden' onClick={(e)=>{setTheme(localStorage.getItem('flowbite-theme-mode'))}}>  
+            <div className='items-center md:hidden' onClick={()=>{setTheme(localStorage.getItem('flowbite-theme-mode') || 'dark')}}>  
                 <DarkThemeToggle className='items-cetnter text-3xl text-white cursor-pointer ' />
 
             </div>
@@ -33,7 +30,7 @@ function Header() {
                         Contact me
                     </button>
                     </a>
-                    <div className='items-center' onClick={(e)=>{setTheme(localStorage.getItem('flowbite-theme-mode')  )}}> 
+                    <div className='items-center' onClick={()=>{setTheme(localStorage.getItem('flowbite-theme-mode') || 'dark' )}}> 
                         <DarkThemeToggle className='items-cetnter text-3xl text-white cursor-pointer border-none z-10 ' />
                     </div>
                 </div>

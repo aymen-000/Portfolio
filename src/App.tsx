@@ -4,10 +4,8 @@ import Header from "./componenets/Header"
 import Home from "./componenets/Home"
 import Projects from "./componenets/Projects"
 import WhatIdo from "./componenets/WhatIdo"
-import { motion, useScroll } from "framer-motion";
 import Footer from "./componenets/Footer"
-import { DarkThemeToggle, Flowbite } from "flowbite-react"
-import { useEffect } from "react"
+import { Flowbite } from "flowbite-react"
 import { UserContextProvider } from "./componenets/UserContext"
 
 function App() {
