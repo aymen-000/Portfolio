@@ -18,7 +18,7 @@ function Aboutme() {
             </div>
 
             <div className="font-inter font-medium text-[15px] leading-[25px] text-[#E1E1E1] max-w-3xl mx-auto text-center text-ellipsis">
-                <p className="mt-4">
+                <p className="mt-4 sm:text-2xl text-xl w-[100%]">
                     Skilled in building modern, responsive web interfaces using React, Tailwind CSS, and MUI. Experienced in data analysis and visualization with Python libraries (Pandas, NumPy, Matplotlib) and building machine learning models (TensorFlow, Scikit-learn) for image classification tasks.
                 </p>
             </div>

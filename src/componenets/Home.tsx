@@ -45,7 +45,7 @@ function Home() {
                             </button>
                         </a>
                     </div>
-                    <div className='text my-2 p-4 text-1xl'>
+                    <div className='text my-2  sm:text-2xl text-xl w-[100%] text text- tracking-wider p-2    '>
                         As a passionate data scientist with expertise in machine learning, AI, and data analytics, I thrive on the challenges of exploring complex data landscapes and uncovering meaningful patterns that drive innovation. I am also a full stack developer using Node.js for backend and React, Tailwind CSS, Flowbit, and Material-UI for frontend.
                     </div>
                 </div>
