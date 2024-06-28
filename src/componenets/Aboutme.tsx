@@ -3,7 +3,7 @@ import './styles.css';
 import light_file from '../uploads/blue_cv.pdf';
 import dark_file from '../uploads/dark_cv.pdf'
 import { UserContext } from './UserContext';
-import { motion } from 'framer-motion'
+
 function Aboutme() {
 
 

@@ -1,9 +1,9 @@
 import "./styles.css"
 import data from '../data/data'
-import { Button } from 'flowbite-react'
+
 import {  useEffect, useState} from 'react'
 import ShowProjetcs from './ShowProjects'
-import {motion} from 'framer-motion'
+
 function Projects() {
     const [selected , setSeleceted] = useState("Image Classification")
     useEffect(()=>{
@@ -17,7 +17,7 @@ function Projects() {
             </div>
             <div className='text-center flex flex-wrap space-x-5 justify-center '>
                 {
-                    data.fields.map((item , index )=>{
+                    data.fields.map((item  )=>{
                         return (
                             <div className='my-2'>
                                 
