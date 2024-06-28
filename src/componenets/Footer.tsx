@@ -2,6 +2,9 @@
 import './styles.css'
 import { Button } from 'flowbite-react'
 import gmail from '/src/assets/gmail.png'
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaMedium } from "react-icons/fa6";
 function Footer() {
     return (
         <div>
@@ -18,6 +21,11 @@ function Footer() {
             </div>
             <hr className="w-[90%] h-1 max-sm:my-6 mx-auto my-1 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
             <div>
+                <div className='flex  justify-center my-2 items-center space-x-4'>
+                    <FaGithub className='text-white text-3xl  hover:bg-transparent  cursor-pointer animate-bounce'/>
+                    <FaMedium className='text-white text-3xl  hover:bg-transparent  cursor-pointer animate-bounce' />
+                    <FaLinkedin className='text-white text-3xl  hover:bg-transparent  cursor-pointer animate-bounce '/>
+                </div>
                 <div className="text-sm pb-2 mx-2 text-gray-500 sm:text-center dark:text-gray-400">© 2024.All Rights Reserved.
                 </div>
             </div>

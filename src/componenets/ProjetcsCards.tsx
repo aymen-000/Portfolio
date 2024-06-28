@@ -1,16 +1,17 @@
 import React from 'react';
-
+import {motion} from 'framer-motion'
 interface CardsProps {
   field: string;
   description: string;
   title: string;
   image: string;
   url: string;
+  index : any 
 }
 
-const ProjectsCards: React.FC<CardsProps> = ({ description, title, image, url }) => {
+const ProjectsCards: React.FC<CardsProps> = ({ description, title, image, url , index }) => {
   return (
-      <div className="bg-white border border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700 h-full  cursor-pointer shadow-lg transform transition duration-500 hover:scale-95 hover:shadow-2xl   ">
+      <motion.div initial={{opacity:0}} whileInView={{opacity:1, transition:{duration:index}}} className="bg-white border border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700 h-full  cursor-pointer shadow-lg transform transition duration-500 hover:scale-95 hover:shadow-2xl   ">
         <div className='h-[100px]'>
           <a href={url}>
             <img className="rounded-t-lg h-full w-full " src={image} alt={title} />
@@ -28,7 +29,7 @@ const ProjectsCards: React.FC<CardsProps> = ({ description, title, image, url })
             </svg>
           </a>
         </div>
-      </div>
+      </motion.div>
   );
 }
 

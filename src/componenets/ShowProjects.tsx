@@ -14,7 +14,7 @@ const ShowProjetcs: React.FC<FieldProps> = ({ field }) => {
           .filter((item) => item.field === field)
           .map((item, index) => (
             <div key={index} className='my-2  max-sm:w-full w-[80%]   '>
-              <ProjectsCards title={item.title} image={item.image} field={item.field} description={item.description} url={item.url} />
+              <ProjectsCards index={index} title={item.title} image={item.image} field={item.field} description={item.description} url={item.url} />
             </div>
           ))}
       </div>

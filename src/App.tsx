@@ -8,6 +8,7 @@ import Footer from "./componenets/Footer"
 import { Flowbite } from "flowbite-react"
 import { UserContextProvider } from "./componenets/UserContext"
 import Particle from "./componenets/Particle"
+import Techno from "./componenets/Techno"
 function App() {
   return (
     <Flowbite>

@@ -3,11 +3,13 @@ import { TypeAnimation } from 'react-type-animation';
 import './styles.css';
 import me from '../assets/me.jpg'
 import rec from '../assets/Rectangle.png'
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { UserContext } from './UserContext';
+import {motion} from 'framer-motion'
 
 function Home() {
     const {theme} = useContext(UserContext)
+    const [rotate , setRotate] = useState(false)
     return (
         <div className='flex justify-center items-start h-fit '>
             <div
@@ -16,13 +18,13 @@ function Home() {
                 style= { theme == 'dark' ? { backgroundImage: `url(${rec})` } : {} } 
             >
                 <div className="flex flex-col mt-10 items-center space-y-2 h-fit text-center">
-                    <div className="text-center">
+                    <motion.div initial={{scale:0 , y:-50}} whileInView={{y:0 , transition:{duration:5}}} animate={{y:0 ,scale:1 , rotate:rotate ? 360 :0}} onClick={()=>setRotate(!rotate)}  className="text-center">
                         <img
                             src={me}
                             className="rounded-full h-[200px] w-[202px]"
                             alt="Profile"
                         />
-                    </div>
+                    </motion.div>
                     <div className="font-poppins font-bold text-3xl">
                         BOUKHARI AIMEN
                     </div>
@@ -40,13 +42,10 @@ function Home() {
                     />
                     <div>
                         <a href="/#contact">
-                            <button className=" text-xl  bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded-[55px]">
+                            <button className=" text-xl  bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded-[55px] glow-on-hover">
                                 Contact me
                             </button>
                         </a>
-                    </div>
-                    <div className='text my-2  sm:text-2xl text-xl w-[100%] text text- tracking-wider p-2    '>
-                        As a passionate data scientist with expertise in machine learning, AI, and data analytics, I thrive on the challenges of exploring complex data landscapes and uncovering meaningful patterns that drive innovation. I am also a full stack developer using Node.js for backend and React, Tailwind CSS, Flowbit, and Material-UI for frontend.
                     </div>
                 </div>
             </div>

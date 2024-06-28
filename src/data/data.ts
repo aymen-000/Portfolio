@@ -7,12 +7,28 @@ import bookingImage from '../assets/booking.jpg';
 import bookImage from '../assets/book.jpg';
 import pcImage from '../assets/pc.jpg';
 import flowerImage from '../assets/flower.jpg';
+import flask from '../assets/flask.png'
+import nodejs from '../assets/node.png'
+import tf from '../assets/tf.png'
+import tail from '../assets/tailw.png'
+import sk from '../assets/sk.png'
+import bo from '../assets/boo.png'
+import pandas from '../assets/pd.jpg'
+import pyhton from '../assets/py.jpg'
+import javascript from '../assets/js.jpg'
+import react from "../assets/reactjs.png"
+import flowbit from '../assets/flow.png'
+
 
 // Original JSON data
 export interface Service {
   icon: string;
   title: string;
   text: string;
+}
+export interface techno {
+  name : string ; 
+  icon : string ; 
 }
 
 export interface Project {
@@ -27,6 +43,7 @@ export interface Data {
   services: Service[];
   fields: string[];
   projects: Project[];
+  techno : techno[] ; 
 }
 const originalData : Data = {
   "services": [
@@ -121,6 +138,52 @@ const originalData : Data = {
       "image": flowerImage,
       "url": "https://github.com/aymen-000/Flower-classification-"
     }
-  ]
+  ] , 
+  "techno" : [
+    {
+      "name" : "Tensorflow" , 
+      "icon" : tf
+    },
+    {
+      "name" : "Sklearn" , 
+      "icon" : sk
+    },
+    {
+      "name" : "Pandas" , 
+      "icon" : pandas
+    },
+    {
+      "name" : "Flask" , 
+      "icon" : flask
+    },
+    {
+      "name" : "Nodejs" , 
+      "icon" : nodejs
+    },
+    {
+      "name" : "Reactjs" , 
+      "icon" : react
+    },
+    {
+      "name" : "Tailwindcss" , 
+      "icon" : tail
+    },
+    {
+      "name" : "Floawbit" , 
+      "icon" : flowbit
+    },
+    {
+      "name" : "Bootstrap" , 
+      "icon" : bo
+    },
+    {
+      "name" : "pyhton" , 
+      "icon" : pyhton
+    },
+    {
+      "name" : "javascript" , 
+      "icon" : javascript
+    }]
+
 };
 export default originalData
