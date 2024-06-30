@@ -25,9 +25,9 @@ function Home() {
                             alt="Profile"
                         />
                     </motion.div>
-                    <div className="font-poppins font-bold text-3xl">
+                    <motion.div initial={{x:-100}} whileInView={{x:0 , transition:{duration:2}}}  className="font-poppins font-bold text-3xl">
                         BOUKHARI AIMEN
-                    </div>
+                    </motion.div>
                     <TypeAnimation
                         sequence={[
                             "AI / Machine Learning",

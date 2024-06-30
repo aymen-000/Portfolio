@@ -17,27 +17,27 @@ function Aboutme() {
                 <h2 className="font-poppins font-semibold text-[15px] gradient-text ">Get to know me</h2>
             </div>
 
-            <div className="font-inter font-medium text-[15px] leading-[25px] text-[#E1E1E1] max-w-3xl mx-auto text-ellipsis w-fit outline-dotted p-1 outline-[#00aeffbf] text-center ">
+            <div className="font-inter font-medium text-[15px] leading-[25px] text-[#E1E1E1] max-w-3xl mx-auto text-ellipsis w-fit outline-dotted p-1 outline-[#00aeffbf] text-center  mx-sm:justify-start max-sm:p-0 max-sm:mr-6">
            
-                    <p className='text '>
+                    <p className='text max-sm:text-[10px] max-sm:text-left break-words'>
                         Student at higher school of computer science ESI
                     </p>
-                    <p className=' text' >
+                    <p className=' text  max-sm:text-[10px] max-sm:text-left' >
                         Skilled in building modern, responsive web interfaces using :
                     </p>
-                    <p className='text'>
+                    <p className='text  max-sm:text-[12px] max-sm:text-left'>
                         React , Tailwind CSS, and MUI.
                     </p>
-                    <p className='text'>
+                    <p className='text  max-sm:text-[12px] max-sm:text-left'>
                         Experienced in data analysis  with Python libraries
                     </p>
-                    <p className='text'>
+                    <p className='text  max-sm:text-[12px] max-sm:text-left '>
                         Pandas, NumPy, Matplotlib
                     </p>
-                    <p className='text'>
-                        building machine learning models for many tasks with  :
+                    <p className='text  max-sm:text-[10px] max-sm:text-left '>
+                        building machine learning models for many tasks with
                     </p>
-                    <p className='text'>
+                    <p className='text  max-sm:text-[12px] max-sm:text-left'>
                         TensorFlow, Scikit-learn , pytorch
                     </p>
 

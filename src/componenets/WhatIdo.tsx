@@ -2,6 +2,7 @@ import  { useState, useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
 import Cards from './Cards';
 import servicesData from '../data/data';
+import {motion} from 'framer-motion'
 function WhatIdo() {
     const [showCards, setShowCards] = useState<boolean>(false);
 
@@ -28,12 +29,12 @@ function WhatIdo() {
 
     return (
         <div className="container mx-auto px-4 py-8 rounded-lg " id="services">
-            <div className="text-center my-4 animate-bounce">
+            <motion.div initial={{x:-300}} whileInView={{x:0 , transition:{duration:2}}} className="text-center my-4">
                 <h1 className="font-inter text-3xl font-bold text-white">What I Do</h1>
                 <h2 className="font-poppins font-semibold text-[15px] text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
                     My Services
                 </h2>
-            </div>
+            </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {servicesData.services.map((service, index) => (

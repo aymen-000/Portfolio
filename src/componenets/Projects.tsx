@@ -1,5 +1,6 @@
 import "./styles.css"
 import data from '../data/data'
+import {motion} from 'framer-motion'
 
 import {  useEffect, useState} from 'react'
 import ShowProjetcs from './ShowProjects'
@@ -11,10 +12,10 @@ function Projects() {
     } , [])
     return (
         <div id='projects' className="my-6">
-            <div className="text-center my-4 ani animate-bounce">
+            <motion.div initial={{x:300}} whileInView={{x:0 , transition:{duration:2}}} className="text-center my-4 ">
                 <h1 className="font-inter text-4xl font-bold text-white">Projects </h1>
                 <h2 className="font-poppins font-semibold text-[15px] gradient-text">Some of my works</h2>
-            </div>
+            </motion.div>
             <div className='text-center flex flex-wrap space-x-5 justify-center '>
                 {
                     data.fields.map((item  )=>{

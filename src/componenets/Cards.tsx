@@ -10,7 +10,7 @@ interface CardsProps {
 
 const Cards: React.FC<CardsProps> = ({ title, text , icon , index }) => {
     return (
-        < motion.div initial={{opacity:0}}  whileInView={{opacity:1, transition:{duration:index/10}}}  className="card-container " id='services'>
+        < motion.div initial={{opacity:0, x:-100}}  whileInView={{opacity:1,x:0 , transition:{duration:index/2}}}  className="card-container " id='services'>
             <div className="dark:bg-gray-800 bg-white  p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl cursor-pointer">
                 <div className='rounded-sm my-2' >
                     <img src={icon} alt="Icon" />
