@@ -40,8 +40,8 @@ export function Contact() {
 
     return (
         <div className="w-full" id="contact">
-            <motion.div initial={{x:-300}} whileInView={{x:0 , transition:{duration:2}}} className="text-center my-4">
-                <h1 className="font-inter text-3xl font-bold text-white">Contact Me</h1>
+            <motion.div  className="text-center my-4">
+                <h1 className="font-inter text-3xl font-bold text-white animate-bounce">Contact Me</h1>
                 <h2 className="font-poppins font-semibold text-[15px] gradient-text">Get In Touch</h2>
             </motion.div>
             <div className="flex justify-center w-full items-center justify-items-center ">

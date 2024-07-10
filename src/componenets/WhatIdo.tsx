@@ -29,8 +29,8 @@ function WhatIdo() {
 
     return (
         <div className="container mx-auto px-4 py-8 rounded-lg " id="services">
-            <motion.div initial={{x:-300}} whileInView={{x:0 , transition:{duration:2}}} className="text-center my-4">
-                <h1 className="font-inter text-3xl font-bold text-white">What I Do</h1>
+            <motion.div  className="text-center my-4">
+                <h1 className="font-inter text-3xl font-bold text-white animate-bounce">What I Do</h1>
                 <h2 className="font-poppins font-semibold text-[15px] text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
                     My Services
                 </h2>

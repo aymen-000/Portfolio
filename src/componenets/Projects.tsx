@@ -12,7 +12,7 @@ function Projects() {
     } , [])
     return (
         <div id='projects' className="my-6">
-            <motion.div initial={{x:300}} whileInView={{x:0 , transition:{duration:2}}} className="text-center my-4 ">
+            <motion.div className="text-center my-4 overflow-x-hidden animate-bounce ">
                 <h1 className="font-inter text-4xl font-bold text-white">Projects </h1>
                 <h2 className="font-poppins font-semibold text-[15px] gradient-text">Some of my works</h2>
             </motion.div>
