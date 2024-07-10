@@ -14,7 +14,7 @@ function Footer() {
                 </div>
                 <div>
                     <a href="mailto:aymne011@gmail.com">
-                        <Button className='text-white  hover:bg-slate-700 px-3 py-2 rounded-xl bg-transparent bo border-[rgb(79,195,247)] items-center '><div className='flex space-x-2 text-2xl items-center'><img src={gmail}width="30px" height="20px" className='items-center mr-2' /> aymne011@gmail.com</div> </Button>
+                        <Button className='text-white  hover:bg-slate-700 px-3 py-2 rounded-xl bg-transparent bo border-[rgb(79,195,247)] items-center '><div className='flex space-x-2 text-2xl items-center ml-2px'><img src={gmail}width="30px" height="20px" className='items-center mr-2 ' /> aymne011@gmail.com </div> </Button>
                     </a>
 
                 </div>
