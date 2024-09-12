@@ -1,7 +1,6 @@
 import { useContext } from 'react';
 import './styles.css';
-import light_file from '../uploads/blue_cv.pdf';
-import dark_file from '../uploads/dark_cv.pdf'
+import cv from '../uploads/cv.pdf'
 import { UserContext } from './UserContext';
 import "./style2.scss"
 
@@ -40,7 +39,7 @@ function Aboutme() {
                 </ul>
             </div>
             <div className='text-center flex justify-center my-4 '>
-                <a href={theme == 'light' ? light_file : dark_file} download='BOUKHARI_AIMEN.pdf' rel="noreferrer">
+                <a href={cv} download='BOUKHARI_AIMEN.pdf' rel="noreferrer">
                     <button className="button text-white hover:bg-blue-500  hover:border-transparent hover:text-white  font-semibold text-xl glow-on-hover">
                         Download Resume
                     </button>

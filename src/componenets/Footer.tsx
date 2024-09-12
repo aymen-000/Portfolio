@@ -22,9 +22,9 @@ function Footer() {
             <hr className="w-[90%] h-1 max-sm:my-6 mx-auto my-1 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
             <div>
                 <div className='flex  justify-center my-2 items-center space-x-4'>
-                    <FaGithub className='text-white text-3xl  hover:bg-transparent  cursor-pointer animate-bounce'/>
-                    <FaMedium className='text-white text-3xl  hover:bg-transparent  cursor-pointer animate-bounce' />
-                    <FaLinkedin className='text-white text-3xl  hover:bg-transparent  cursor-pointer animate-bounce '/>
+                    <a href='https://github.com/aymen-000'><FaGithub className='text-white text-3xl  hover:bg-transparent  cursor-pointer animate-bounce'/></a>
+                    <a href='https://medium.com/@aymne011'><FaMedium className='text-white text-3xl  hover:bg-transparent  cursor-pointer animate-bounce' /></a>
+                    <a href='https://www.linkedin.com/in/aimen-boukhari-5a64b9284/'><FaLinkedin className='text-white text-3xl  hover:bg-transparent  cursor-pointer animate-bounce '/></a>
                 </div>
                 <div className="text-sm pb-2 mx-2 text-gray-500 sm:text-center dark:text-gray-400">© 2024.All Rights Reserved.
                 </div>
