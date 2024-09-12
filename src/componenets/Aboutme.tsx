@@ -1,13 +1,10 @@
-import { useContext } from 'react';
 import './styles.css';
 import cv from '../uploads/cv.pdf'
-import { UserContext } from './UserContext';
 import "./style2.scss"
 
 function Aboutme() {
 
 
-    const { theme } = useContext(UserContext)
 
 
     return (
@@ -26,7 +23,7 @@ function Aboutme() {
                         React , Tailwind CSS, and MUI.
                     </li>
                     <li className='text-left'>
-                        nodejs , expressjs , flask 
+                        nodejs , expressjs , flask  , django
                     </li>
                     <li className='text-left'>
                         Pandas, NumPy, Matplotlib
@@ -34,6 +31,10 @@ function Aboutme() {
                     <li className='text-left'>
                         TensorFlow, Scikit-learn , pytorch
                     </li>
+                    <li className='text-left'>
+                        Docker, git , github
+                    </li>
+
 
 
                 </ul>
