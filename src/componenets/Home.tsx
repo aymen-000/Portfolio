@@ -15,7 +15,6 @@ function Home() {
             <div
                 id='home'
                 className='flex justify-center  bg-cover bg-center w-[800px] h-fit rounded-[500px] my-1 mx-10 text-white'
-                style= { theme == 'dark' ? { backgroundImage: `url(${rec})` } : {} } 
             >
                 <div className="flex flex-col mt-10 items-center space-y-2 h-fit text-center">
                     <motion.div initial={{scale:0 , y:-50}} whileInView={{y:0 , transition:{duration:5}}} animate={{y:0 ,scale:1 , rotate:rotate ? 360 :0}} onClick={()=>setRotate(!rotate)}  className="text-center">
