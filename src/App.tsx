@@ -7,7 +7,6 @@ import WhatIdo from "./componenets/WhatIdo"
 import Footer from "./componenets/Footer"
 import { Flowbite } from "flowbite-react"
 import { UserContextProvider } from "./componenets/UserContext"
-import Particle from "./componenets/Particle"
 function App() {
   return (
     <Flowbite>
@@ -15,7 +14,6 @@ function App() {
       <div className="bg-gray-800 h-full  dark:bg-[#1A1A1A] ">
 
         <Header />
-        <Particle/>
         <Home />
         <Aboutme />
         <WhatIdo />

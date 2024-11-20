@@ -2,13 +2,10 @@
 import { TypeAnimation } from 'react-type-animation';
 import './styles.css';
 import me from '../assets/me.jpg'
-import rec from '../assets/Rectangle.png'
-import { useContext, useState } from 'react';
-import { UserContext } from './UserContext';
+import {useState } from 'react';
 import {motion} from 'framer-motion'
 
 function Home() {
-    const {theme} = useContext(UserContext)
     const [rotate , setRotate] = useState(false)
     return (
         <div className='flex justify-center items-start h-fit '>
